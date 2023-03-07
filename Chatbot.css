@@ -1,11 +1,16 @@
 .Navbar
 {
-    width: 100%;
+    width: 99%;
     height: 55px;
     background-color: #fff;
     box-shadow: 1px 1px 15px rgb(151, 150, 150);
     padding-top: 40px;
     border-radius: 25px ;
+    margin: 10px;
+}
+body
+{
+    margin: 0px;
 }
 .Home
 {
@@ -53,6 +58,8 @@
     font-size: 14px;
     margin-left: 120px;
     letter-spacing: 2px;
+    border: none;
+    background-color: #fff;
 }
 .Signup
 {
@@ -60,8 +67,10 @@
     font-family: Arial;
     color: rgb(66, 66, 66);
     font-size: 14px;
-    margin-left: 120px;
+    margin-left: 113px;
     letter-spacing: 2px;
+    border: none;
+    background-color: #fff;
 }
 .image
 {
@@ -75,10 +84,12 @@
 .Wholepage
 {
     background-color: aquamarine;
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 1000px;
+   padding-top: 1px;
 }
-.contentpart
+.loginpop
 {
-
+    width: 200px;
+    height: 400px;
 }
