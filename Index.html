@@ -6,25 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chatbot</title>
     <link rel="icon" type="image/png" href="chatbot icon.png">
-    <script src="chatbot.js"></script>
     <link rel="stylesheet" href="Chatbot.css" type="text/css">
+    <script src="chatbot.js"></script>
 </head>
 <body>
-<div class="Wholepage">
-    
+<div class="Wholepage" >
+    <div class="background"id="blur">
         <div class="Navbar">
             <a href="Index.html"><img class="image" src="main icon (1).jpg" alt="not supported"></a>
                 <div class="menu">
                     <a class="Home" href="Index.html">Home</a>
                     <a class="About" href="#About">About</a>
                     <a class="Docs" href="">Docs</a>
-                    <button class="Login" onclick="login()">Login</button>
-                    <button class="Signup" onclick="">Signup</button>
-                </div></div>
-                <div class="background"></div>
-                    <div id="popL"></div>
-                
-                </div>
+                    <a class="Login" href="#" onclick="login()">Login</a>
+                    <button class="Signup" onclick="login()">Signup</button>
+                </div>  
+        </div>
+    </div>
+    <div id="popL">
+        <img class="loginpic" src="main icon (1).jpg">
+        
+        <button id="close" onclick="close()">&times</button>
+        <div class="info">
+    
+        </div>   
+    </div>
+    <div id="popL">
+        <img class="loginpic" src="main icon(1).jpg">
+        <button id="close" onclick="close()">&times</button>
+    </div>
 </div>
 </body>
 </html>

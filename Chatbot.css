@@ -1,6 +1,6 @@
 .Navbar
 {
-    width: 99%;
+    width: 1515px;
     height: 55px;
     background-color: #fff;
     box-shadow: 1px 1px 15px rgb(151, 150, 150);
@@ -19,6 +19,7 @@ body
     color: rgb(66, 66, 66);
     font-size: 14px;
     letter-spacing: 2px;
+    cursor: pointer;
 }
 .About
 {
@@ -28,6 +29,7 @@ body
     font-size: 14px;
     margin-left: 107px;
     letter-spacing: 2px;
+    cursor: pointer;
 }
 .Frontpage
 {
@@ -42,13 +44,14 @@ body
     font-size: 14px;
     margin-left: 92px;
     letter-spacing: 2px;
+    cursor: pointer;
 }
 .menu
 {
     background-color: #fff;
     width: auto;
     height: auto;
-    margin-left: 792px;
+    margin-left: 858px;
 }
 .Login
 {
@@ -71,6 +74,7 @@ body
     letter-spacing: 2px;
     border: none;
     background-color: #fff;
+    cursor: pointer;
 }
 .image
 {
@@ -87,25 +91,40 @@ body
     width: 100%;
     height: 778px;
    padding-top: 1px;
+   display: flex;
 }
-.background
+.background#blur.active
 {
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    opacity: 0.7;
-    position: absolute;
-    top: 0;
+    filter: blur(5px);
+    pointer-events: none;
 }
 #popL
 {
     width: 361px;
     height: 469px;
-    background-color: #fff;
+    background-color: #ffffff;
     position: absolute;
-    margin-left: 38%;
-    margin-top: 90px;
     border-radius: 25px;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    width: 25%;
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+#popL.active
+{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+.loginpic
+{
+    width: 83px;
+    height: 104px;
+    margin-left: 159px;
 }
 .h1
 {
@@ -123,16 +142,30 @@ body
     height: 100px;
     
 }
-.close
+#close
 {
-    margin-left: 100px;
-    margin-bottom: 50px;
     float: left;
+    width: 339px;
+    height: 46px;
+    border: none;
+    background-color: #ffffff;
+    font-weight: bolder;
+    font-size: 26px;
+    margin-top: 417px;
+    border-radius: 25px;
+    opacity: 1.2;
+    color: black;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+#close:hover{
+    background-color: rgb(151, 151, 151);
+    opacity: 0.5;
 }
 #close
 {
-    margin-left: 100px;
-    margin-top: 30px;
+    margin-left: -220px;
+    margin-top: 418px;
 }
 .ic
 {
@@ -141,4 +174,14 @@ body
     position: absolute;
     top: 0;
     text-align: center;
+}
+.info
+{
+    width: 20px;
+    height: 40px;
+    background-color:gray;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
 }
