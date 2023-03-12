@@ -4,37 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chatbot</title>
-    <link rel="icon" type="image/png" href="chatbot icon.png">
-    <link rel="stylesheet" href="Chatbot.css" type="text/css">
-    <script src="chatbot.js"></script>
+    <title>ChatBot</title>
+    <link rel="icon" href="chatbot icon.png">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <script src="Java.js"></script>
 </head>
 <body>
-<div class="Wholepage" >
-    <div class="background"id="blur">
-        <div class="Navbar">
-            <a href="Index.html"><img class="image" src="main icon (1).jpg" alt="not supported"></a>
-                <div class="menu">
-                    <a class="Home" href="Index.html">Home</a>
-                    <a class="About" href="#About">About</a>
-                    <a class="Docs" href="">Docs</a>
-                    <a class="Login" href="#" onclick="login()">Login</a>
-                    <button class="Signup" onclick="login()">Signup</button>
-                </div>  
-        </div>
+    <div class="container" id="bg">
+        <nav id="Nav">
+            <div class="tt">
+                <a href="Index.html"><img id="Image"  src="main icon (1).jpg" alt="Not Supported"></a>
+                <a id="title" href="Index.html">ChatBot</a>
+            </div>
+            <ul>
+                <li><a  id="Home" href="Index.html">Home</a></li>
+                <li><a id="About"  href="#">About</a></li>
+                <li><a id="Docs" href="">Docs</a></li>
+                <li><a id="Login" >Login</a></li>
+                <li><a id="Signup" >Signup</a></li>
+                <li><button onclick="toggleBtn()" id="Btn"><span></span></button></li>
+            </ul>
+        </nav>      
     </div>
-    <div id="popL">
-        <img class="loginpic" src="main icon (1).jpg">
-        
-        <button id="close" onclick="close()">&times</button>
-        <div class="info">
-    
-        </div>   
-    </div>
-    <div id="popL">
-        <img class="loginpic" src="main icon(1).jpg">
-        <button id="close" onclick="close()">&times</button>
-    </div>
-</div>
 </body>
 </html>
