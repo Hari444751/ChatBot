@@ -7,3 +7,4 @@ function toggleBtn()
     var Nav=document.getElementById("Nav");
     Nav.classList.toggle("onnav");
 }
+
